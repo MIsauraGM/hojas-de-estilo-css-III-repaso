@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centrado vertical</title>
+  <style>
+    /* Téngase en cuenta que la altura de una línea de texto son 18px 
+    (16px de fuente más 1px superior y 1px inferior cada línea). */
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    [class *= "estrategia-"] {
+      border: 1px solid #000;
+      margin: 32px;
+      width: 300px;
+    }
+
+    .estrategia-1 p {
+      /*uso de padding*/
+      padding: 32px 0;
+    }
+    /* Estrategia 2:
+      - Centrado vertical perfecto sin tener que especificar el alto del párrafo.
+    */
+
+    .estrategia-2 {
+      /*uso de posicionamientos*/
+      position: relative;
+		  height: 82px;
+    }
+
+    .estrategia-2 p {
+      position: absolute;
+      top: 50%;
+      margin-top: -9px;
+    }
+    /* Estrategia 2:
+    - Innconveniente: tenemos que dar una altura al párrafo.
+    Si por ejemplo el párrafo necesitara 2 o más líneas entonces 
+    no quedaría bien centrado o no cabría el espacio en contenido indicado.
+    */
+
+    .estrategia-3 {
+      /*uso de tablas css*/
+      display: table;
+    }
+
+    .estrategia-3 p {
+      height: 82px;
+      display: table-cell;
+      vertical-align: middle;
+    }
+    /* Estrategia 3:
+    -  Mejor opción si queremos tener una altura determinada para
+    el contenedor.
+    */
+
+	</style>
+</head>
+<body>
+	<div class="estrategia-1">
+		<p>Texto centrado con padding.</p>
+	</div>
+	<div class="estrategia-2">
+		<p>Texto centrado con posicionamientos.</p>
+	</div>
+	<div class="estrategia-3">
+		<p>Texto centrado con display:table</p>
+	</div>
+</body>
+</html>
