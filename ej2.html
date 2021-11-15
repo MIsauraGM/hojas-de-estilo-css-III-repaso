@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unidad relativa em</title>
+  <style>	
+    p { 
+      border: 1px solid red;
+    }
+
+    p.primero {
+      font-size: 16px;
+      margin-left: 1em;
+    }
+
+    p.segundo { 
+      font-size: 32px;
+      margin-left: em;
+    }
+
+    p.tercero { 
+      font-size: 48px;
+      margin-left: em;
+    }
+
+    p.cuarto { 
+      font-size: 8px;
+      margin-left: em;
+    }
+    </style>
+  </head>
+  <body>
+    <p class="primero">Este párrafo tiene un tamaño de fuente de 16px</p>
+    <p class="segundo">Este párrafo tiene un tamaño de fuente el doble de grande pero se desea que el margen lateral izquierdo sea el mismo que en el párrafo superior. ¿Cuántos em debería valer margin-left?</p>
+    <p class="tercero">Este párrafo tiene un tamaño de fuente el triple de grande pero se desea que el margen lateral izquierdo sea el mismo que en el párrafo superior. ¿Cuántos em debería valer margin-left?</p>
+    <p class="cuarto">Este párrafo tiene un tamaño de fuente el doble de pequeña pero se desea que el margen lateral izquierdo sea el mismo que en el párrafo superior. ¿Cuántos em debería valer margin-left?</p>
+  </body>
+  </html>
