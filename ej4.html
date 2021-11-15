@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centrado de texto y de su contenedor</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      .centrado {
+        text-align: center;
+        border: 1px dotted #000;
+        padding: 8px;
+      }
+
+      #texto-no-centrado { 
+        width: 50%;
+        border: 1px dotted #f00;
+        padding: 8px;
+        margin: auto;
+      }
+
+      center { 
+        margin: 16px 0;
+      }
+    </style>
+</head>
+<body>
+	<p class="centrado">Texto centrado</p>
+	<div id="texto-no-centrado">
+		<p>Un texto <u>no</u> centrado dentro de un div centrado</p>
+	</div>
+	<center>Una práctica obsoleta con la etiqueta "center".</center>
+</body>
+</html>
