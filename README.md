@@ -11,5 +11,5 @@
 
 **3. Dado el fichero ej3-resultado.png añade el código CSS necesario al fichero ej3.html para obtener las tres cajas posicionadas vertical y horizontalmente entre ellas.**
 
-**4. Revisa el contenido del fichero ej4.html y comprueba la diferencia entre centra un texto y su contenedor. Añade un div que esté centrado verticalmente a su contenedor. ¿Se haría del mismo modo? ¿Cuál es la clave para centrar un contenedor horizontalmente? ¿Y verticalemnte?**
+**4. Revisa el contenido del fichero ej4.html y comprueba la diferencia entre centra un texto y su contenedor. Añade un div que esté centrado verticalmente a su contenedor. ¿Se haría del mismo modo? ¿Cuál es la clave para centrar un contenedor horizontalmente? ¿Y verticalmente?**
 
