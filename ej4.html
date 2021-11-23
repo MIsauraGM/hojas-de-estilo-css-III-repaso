@@ -25,16 +25,40 @@
         margin: auto;
       }
 
-      center { 
+      center{ 
         margin: 16px 0;
       }
+
+      #contenedor {
+        border: 1px solid green;
+        height: 300px;
+        width: 800px;
+        position: relative;
+      }
+
+      #contendor-vertical {
+        border: 1px dotted #f00;
+        position: absolute;
+        height: 30%;
+        width: 50%;
+        top: 50%;
+        left: 50%;
+        margin-top: -5%;
+        margin-left: -25%;
+      }
+
     </style>
 </head>
 <body>
-	<p class="centrado">Texto centrado</p>
-	<div id="texto-no-centrado">
-		<p>Un texto <u>no</u> centrado dentro de un div centrado</p>
-	</div>
-	<center>Una práctica obsoleta con la etiqueta "center".</center>
+  <p class="centrado">Texto centrado</p>
+  <div id="texto-no-centrado">
+    <p>Un texto <u>no</u> centrado dentro de un div centrado</p>
+  </div>
+  <center>Una práctica obsoleta con la etiqueta "center".</center>
+  <div id="contenedor">
+    <div id="contendor-vertical">
+      <p>Un texto <u>no</u> centrado dentro de un div centrado</p>
+    </div>
+  </div>
 </body>
 </html>
